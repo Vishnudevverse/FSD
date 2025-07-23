@@ -1,0 +1,15 @@
+* {
+  text-align: center;
+  background-color: darkgray;
+}
+
+h1 {
+  font-size: 5em;
+  max-lines: 1;
+  color: rgb(255, 0, 0);
+}
+
+p {
+  color: rgb(0, 26, 255);
+  font-size: 2em;
+}
