@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="name" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+      const form = document.getElementById("myForm");
+      const output = document.getElementById("output");
+      const username = document.getElementById("username");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        output.textContent = 'You entered: ${username.value.trim()}';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="myForm">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="name" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="output"></p>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var name = document.getElementById("username").value;
+          document.getElementById("output").textContent = "You entered:" + name;
+        });
+    </script>
+  </body>
+</html>
+I
